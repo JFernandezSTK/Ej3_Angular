@@ -1,0 +1,11 @@
+<p>Color de la bicicleta: <input type="text" [(ngModel)]="bici.color"/></p>
+<p>Marca: <input type="text" [(ngModel)]="bici.marca"/></p>
+<p>Velocidad: <input type="number" [(ngModel)]="bici.velocidad"/></p>
+<p>Cuantos piñones tiene: <input type="number" [(ngModel)]="bici.pinones"/></p>
+<p>Cuantos platos tiene: <input type="number" [(ngModel)]="bici.platos"/></p>
+<p><input type="checkbox" [(ngModel)]="bici.electrica"/>¿Es electrica?</p>
+<p>Cambio de velocidad: <input type="number" [(ngModel)]="dif"/></p>
+<button (click)="mostrarInfo()">Especificaciones</button>
+<button (click)="bici.acelerar(dif)">Acelerar</button>
+<button (click)="bici.frenar(dif)">Frenar</button>
+<p>La bicicleta tiene las siguientes especificaciones: {{info}}</p>
